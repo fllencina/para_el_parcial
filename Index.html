@@ -1,0 +1,111 @@
+<html>
+    <head>
+                <script src="./Funciones.js">
+                        
+                        </script>
+                        <link rel="stylesheet" href="./Estilos.css"/>
+        </head>
+        <body>
+               <!-- remove/set atribute ejemplo, ("class","test") -->
+                <div id="divListaPersonas" style="position:relative">
+                <div id="divIngreso" class="divIngreso" style="position:fixed;top:35%;left:36%">
+                        <input  id="btnCerrar" type="button" value="X" onclick="cerrar();">
+                        <br>
+                        <label>Nombre</label>
+                        <br>
+                        <input id="inputNombreAgregar" class="sinError classInput" placeholder="Tu nombre..." type="text">
+                        <br>
+                        <label>Apellido</label>
+                        <br>
+                        <input id="inputApellidoAgregar" class="sinError classInput" placeholder="Tu apellido.." type="text">
+                        <br>
+                        <label>Fecha</label>
+                        <br>
+                        <input id="inputFechaAgregar" class="sinError classInput" placeholder="Fecha.." type="date">
+                        <br>
+                        
+                        <label>Telefono</label>
+                        <br>
+                        <input id="inputTelefonoAgregar" class="sinError classInput" placeholder="Telefono.." type="number">
+                        <br>
+                        <br>
+                <input class="btnGuardar classInput" type="button" value="Guardar" id="btnGuardarAgregar" onclick="Agregar();">
+                        </div>
+                         <input type="button" value="Agregar" id="btnAgregar" onclick="AbrirAgregar();">
+                <h2>Lista de personas</h2>
+                <table id=tablaPersonas class="TablaPersonas">
+                      <thead>  <tr class="Titulo">
+                                <th>
+                                Nombre
+                                </th>
+                                <th>
+                                Apellido
+                                </th>
+                                <th>
+                                Fecha
+                                </th>
+                                <th>
+                                Telefono
+                                </th>
+                                <th>
+                                Accion
+                                </th>
+                                <th>
+                                 Modificar
+                                </th>
+                        </tr>
+                </thead>
+                <tbody id="tCuerpo">
+
+                </tbody>
+                </table>
+               
+                 <!--<input type="button" id="btn" value="Cargar" onclick="LeerGet();">-->
+                </div>
+                <div id="divTablaModificar"  class="TablaModificar" style="position:fixed;top:35%;left:10%" style="display:none">
+                 <input  id="btnCerrar" type="button" value="X" onclick="cerrarModificar();">
+                 <br>
+                 <br>
+                 <table id=modificar style="display: none;border-collapse: collapse" >
+                      <thead>  <tr class="Titulo">
+                                <th>
+                                Nombre
+                                </th>
+                                <th>
+                                Apellido
+                                </th>
+                                <th>
+                                Fecha
+                                </th>
+                                <th>
+                                Telefono
+                                </th>
+                                <th>
+                                Accion
+                                </th>
+                               
+                        </tr>
+                </thead>
+                <tbody id="tCuerpoModificar">
+                <tr>
+                <td id="tdNombre">
+                <input type="text" name="inputNombre" id="inputNombre">
+                </td>
+                <td id="tdApellido">
+                <input type="text" name="inputApellido" id="inputApellido">
+                </td>
+                <td id="tdFecha">
+                <input type="text" name="inputFecha" id="inputFecha">
+                </td>
+                <td id="tdTelefono">
+                <input type="text" name="inputTelefono" id="inputTelefono">
+                </td>
+                <td id="GuardarModificacion">
+                <input type="button" name="btnGuardar" id="btnGuardar" value="Guardar" onclick="ModificarRegistro();">
+                </td>
+                </tr>
+                </tbody>
+                </table>
+            </div>
+        </body>
+</html>

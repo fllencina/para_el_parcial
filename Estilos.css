@@ -1,0 +1,119 @@
+.divIngreso{
+    width:30%;
+    height: 300px;
+    background-color:#C8C7C6;
+    display: none;
+    padding: 20px;
+    animation-name: aparecer;
+    animation-duration: 4s;
+}
+.btnGuardar{
+    width: 50%;
+    height: 50px;
+    background-color: green;
+    margin-top: 10px;
+    color: white;
+    text-align: center;
+    border-radius: 5px; 
+    cursor: pointer;   
+    border: none;
+}
+.btnGuardar:hover{
+    background-color: #19987D;
+}
+
+th,td{
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even){
+background-color:#C8C7C6; 
+}
+.Titulo{
+    background-color:#19987D ;
+    color:white;
+}
+.TablaPersonas{
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+.TablaModificar{
+    
+    background: white;
+    border-color: grey;
+    border-style: double;
+    padding: 7px;
+    
+    display: none;
+}
+.classInput{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
+    width: 100%;
+    height:30px;
+    box-sizing:border-box;
+    display: inline-block;
+}
+.Modificar{
+    display: none;
+    
+
+}
+.Modificando{
+    display: block;
+    height: 200px;
+    width: 100%;    
+}
+
+.sinError{
+    border-color: #C8C7C6;
+    border-style: solid;
+    border-width: thin;
+}
+.Error{
+    border-color: red;
+    border-style: solid;
+    border-width: thin;
+}
+#btnCerrar{
+    width: 35px;
+    height: 35px;
+    background-color:red;
+    margin-bottom: 10px;
+    color: white;
+    text-align: center;
+    border-radius: 5px; 
+    cursor: pointer;   
+    border: none;
+    display: block;
+    position: absolute;
+    right: 5px;
+    top:5px;
+}
+@keyframes  aparecer{
+    from {
+        opacity: 0
+    }
+    to{
+        opacity: 1
+    }
+}
+
+@keyframes  desaparecer{
+    from {
+        opacity: 1
+    }
+    to{
+        opacity: 0
+    }
+}
+
+.AccionBorrar{
+    color:blue;
+}
+.AccionBorrar:hover{
+    color:red;
+    cursor: pointer;
+}
